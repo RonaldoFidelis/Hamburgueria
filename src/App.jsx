@@ -8,7 +8,8 @@ import burger from '/img/burguer.png'
 import pizza from '/img/pizza.png'
 import express from '/img/express.png'
 import cebola from '/img/aneisdecebola.png'
-import xegg from '/img/burguer-logo.png'
+import xegg from '/img/xegg.png'
+import xbacon from '/img/xbacon.png'
 
 const cardapio = [
   {
@@ -22,6 +23,12 @@ const cardapio = [
     preco: 30.00,
     img: xegg,
     gramas: 180,
+    id:2
+  },{
+    nome: 'X-Bacon',
+    preco: 32.50,
+    img: xbacon,
+    gramas: 185,
     id:2
   }, {
     nome: 'Express',

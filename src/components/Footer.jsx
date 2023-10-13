@@ -8,14 +8,14 @@ export function Footer() {
       <div className="md:col-span-2 pt-10 md:pt-2">
         <ul className="flex md:justify-end">
           <li
-            className="flex items-center justify-center text-xl bg-HomeFontSecondary w-9 h-9 rounded-lg mx-2">
+            className="flex items-center justify-center text-xl bg-HomeFontSecondary border-2 border-[#f68133] hover:border-white duration-500 w-9 h-9 rounded-lg mx-2">
             <a href="https://github.com/RonaldoFidelis" target="_blank" rel="noreferrer"><i
-              className="text-HomeFontPrimary fa-brands fa-github"></i></a>
+              className="text-white fa-brands fa-github"></i></a>
           </li>
           <li
-            className="flex items-center justify-center text-xl bg-HomeFontSecondary w-9 h-9 rounded-lg mx-2">
+            className="flex items-center justify-center text-xl bg-HomeFontSecondary border-2 border-[#f68133] hover:border-white duration-500 w-9 h-9 rounded-lg mx-2">
             <a href="https://www.linkedin.com/in/ronaldo-fidelis-9922941a9/" target="_blank" rel="noreferrer"><i
-              className="text-HomeFontPrimary fa-brands fa-linkedin-in"></i></a>
+              className="text-white fa-brands fa-linkedin-in"></i></a>
           </li>
         </ul>
       </div>
