@@ -21,7 +21,7 @@ export function Footer() {
       </div>
       <div className="md:col-span-3 mt-20">
         <p className="flex justify-center gap-1 text-fontLight text-[15px]">&copy; Projeto desenvolvido por:<a
-          className="text-HomeFontPrimary hover:text-white duration-500 cursor-pointer" href="https://github.com/RonaldoFidelis"
+          className="text-HomeFontPrimary hover:text-white duration-500 cursor-pointer" href="https://portfolio-ronaldo-fidelis.netlify.app/"
           target="_blank" rel="noreferrer">Ronaldo Fidelis</a></p>
       </div>
     </div>

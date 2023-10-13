@@ -6,3 +6,16 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  /* Largura da barra de rolagem */
+  background-color: #F8F8F8;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 5px;
+  background-color: #FFCC01;
+  /* Cor da thumb */
+}
