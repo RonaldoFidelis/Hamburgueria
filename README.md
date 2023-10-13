@@ -1,4 +1,4 @@
-# BurguerLovers
+# BurguerLovers (Em construção)
 
 Aplicação web de uma hamburgueria com funcionalidade de carrinho de compras.
 
@@ -6,6 +6,8 @@ Aplicação web de uma hamburgueria com funcionalidade de carrinho de compras.
 
 
 <br>
+
+> Teste você mesmo: <a href="https://hamburgueria-peach-six.vercel.app/" target="_blank">Hamburgueria</a>
 
 ## Visão Geral
 
