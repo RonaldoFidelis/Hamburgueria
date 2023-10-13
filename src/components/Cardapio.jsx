@@ -7,7 +7,7 @@ import xegg from '/img/burguer-logo.png'
 export function Cardapio({cardapio}){
   return(
     <section>
-      <div className="w-full min-h-screen flex flex-col items-center bg-CardapioBg">
+      <div className="w-full min-h-screen flex flex-col items-center bg-CardapioBg py-5">
         <div className="flex items-center justify-center mt-10 mb-10">
           <h1 className="text-HomeFontPrimary font-medium text-2xl">Cardápio</h1>
         </div>

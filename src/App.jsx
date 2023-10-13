@@ -1,5 +1,6 @@
 import './App.css'
 import { Cardapio } from './components/Cardapio'
+import { Footer } from './components/Footer'
 import { Home } from './components/Home'
 import { Nav } from './components/Nav'
 
@@ -15,7 +16,7 @@ function App() {
         <Cardapio/>
       </main>
       <footer className='Foot'>
-
+        <Footer/>
       </footer>
     </div>
   )
