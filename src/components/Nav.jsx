@@ -1,14 +1,12 @@
-import burger from '/img/burguer.png'
 
 export function Nav(){
   return(
-    <nav className="fixed z-50 w-full flex items-center justify-between px-10 py-2 bg-HomeBg">
-      <a className="flex items-center gap-3" href="#">
-        <h1 className='text-xl font-medium'>Burger</h1>
-        <img className='w-[50px]' src={burger} alt="logo" />
+    <nav className="fixed z-50 w-full flex items-center justify-between px-4 md:px-10 py-3 bg-HomeBg text-HomeFontPrimary">
+      <a className="flex items-center gap-2" href="#">
+        <h1 className='text-lg md:text-xl font-medium'>Burguer Express</h1>
       </a>
       <a href="#">
-      <i className="text-xl fa-solid fa-cart-shopping"></i>
+      <i className="text-lg md:text-xl fa-solid fa-cart-shopping"></i>
       </a>
     </nav>
   )
