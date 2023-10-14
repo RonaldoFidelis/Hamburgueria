@@ -12,7 +12,7 @@ export function Nav({cart}){
       </Link>
       <Link to="/carrinho">
         {cart != '' ? (
-        <span className="absolute flex items-center justify-center right-[5px] top-2 md:right-7 md:top-1 bg-green-500 p-2 rounded-full text-xs text-white"></span>):('')}
+        <span className="absolute flex items-center justify-center right-[5px] top-3 md:right-[30px] md:top-[10px] bg-green-500 p-2 rounded-full text-xs text-white"></span>):('')}
         <i className="text-lg md:text-xl fa-solid fa-cart-shopping"></i>
       </Link>
     </nav>
