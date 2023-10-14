@@ -52,13 +52,13 @@ const cardapio = [
     img: cebola,
     gramas: 100,
     id: 5
-  },{
+  }, {
     nome: 'Nuggets',
     preco: 10.99,
     img: nuggets,
     gramas: 100,
     id: 6
-  },{
+  }, {
     nome: 'Batatinha',
     preco: 7.90,
     img: batata,
@@ -69,28 +69,35 @@ const cardapio = [
 
 function App() {
   const [cart, setCart] = useState([]);
-  const addToCart = (produto) => {
-    const add = [...cart, {
-      nome: produto.nome,
-      preco: produto.preco,
-      img: produto.img,
-      gramas: produto.gramas,
-      id: produto.id
-    }];
 
-    setCart(add)
+  const addToCart = (produto) => {
+
+    const isItemInCart = cart.some((item) => item.id === produto.id);
+
+    if (isItemInCart) {
+      console.log('existe');
+    } else {
+      console.log('não existe');
+      const add = [...cart, {
+        nome: produto.nome,
+        preco: produto.preco,
+        img: produto.img,
+        gramas: produto.gramas,
+        id: produto.id
+      }];
+      setCart(add);
+    }
   }
-  console.log(cart)
   return (
     <div className='w-full min-h-full'>
-      <header className='Nav'>
-        <Nav />
-      </header>
       <BrowserRouter>
+        <header className='Nav'>
+          <Nav />
+        </header>
         <main className=''>
           <Routes>
             <Route path="/" element={<Home Produtos={cardapio} addToCart={addToCart} />} />
-            <Route path="/carrinho" element={<Carrinho cart={cart} />} />
+            <Route path="/carrinho" element={<Carrinho cart={cart} setCart={setCart} />} />
           </Routes>
         </main>
       </BrowserRouter>

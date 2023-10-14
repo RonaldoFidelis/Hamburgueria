@@ -22,7 +22,8 @@ export function Cardapio({ produto, addToCart }) {
                 <h2 className='text-xs font-normal text-HomeFontPrimary mb-1'>{food.gramas}g</h2>
                 <h3 className='text-sm font-semibold text-HomeFontSecondary'>R$ {food.preco}</h3>
               </div>
-              <button onClick={() => handleClick(food)} className='text-white text-sm bg-HomeFontSecondary p-1 rounded-md'>Adicionar</button>
+              <button onClick={() => handleClick(food)} className='flex items-center justify-center gap-2 text-white text-[15px] bg-HomeFontSecondary px-2 py-1 rounded-md'>Adicionar
+              <i className="fa-solid fa-cart-shopping"></i></button>
             </div>
           ))}
         </div>
