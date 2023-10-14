@@ -7,7 +7,8 @@ export function Carrinho({ cart, setCart }) {
   const deleteWich = (produto) => {
     // Filtrar os itens do carrinho, removendo o item com o mesmo ID
     const novoCarrinho = carrinho.filter((item) => item.id !== produto.id);
-    setCarrinho(novoCarrinho); // Atualizar o estado do carrinho
+    setCarrinho(novoCarrinho);
+    setCart(novoCarrinho);
   };
 
   // Função para aumentar a quantidade de um item no carrinho
