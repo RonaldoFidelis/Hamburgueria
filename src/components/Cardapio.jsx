@@ -8,10 +8,10 @@ export function Cardapio({ produto, addToCart }) {
   return (
     <section id="cardapio">
       <div className="w-full min-h-screen flex flex-col items-center bg-CardapioBg py-5">
-        <div className="flex items-center justify-center mt-10 mb-10">
+        <div className="flex items-center justify-center mb-10">
           <h1 className="text-HomeFontPrimary font-medium text-2xl">Cardápio</h1>
         </div>
-        <div className='flex flex-wrap items-center justify-center gap-5'>
+        <div className='grid md:grid-cols-4 gap-5'>
           {produto.map((food, id) => (
             <div id={food.id} key={id} className='flex flex-col items-center justify-center bg-[#FFFFFF] w-[200px] h-[250px] rounded-3xl gap-2 shadow-lg'>
               <div className='flex max-w-[110px] max-h-[110px] items-center justify-center overflow-hidden bg-black rounded-full p-2'>
