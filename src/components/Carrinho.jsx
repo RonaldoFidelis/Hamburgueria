@@ -106,14 +106,14 @@ export function Carrinho({ cart, setCart }) {
                 </span>
                 <span className='flex items-center justify-between'>
                   <p className='text-sm font-medium'>Frete</p>
-                  <p className='text-sm'>Gratís</p>
+                  <p className='text-sm'>Grátis</p>
                 </span>
                 <span className='flex items-center justify-between'>
                   <p className='text-sm font-medium'>Cupom</p>
                   <p className='text-sm'>Sem cupom</p>
                 </span>
               </div>
-              <div className='w-full items-center justify-center flex justify-between bg-zinc-200 px-2 py-3'>
+              <div className='w-full items-center flex justify-between bg-zinc-200 px-2 py-3'>
                 <h1 className='text-base font-medium'>Total</h1>
                 <p className='text-sm'>R$ {subtotal.toFixed(2)}</p>
               </div>
