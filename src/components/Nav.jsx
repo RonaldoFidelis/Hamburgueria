@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import xegg from '/img/xegg.png'
 
 export function Nav({cart}){
 
@@ -7,6 +8,7 @@ export function Nav({cart}){
       <Link to="/" className="flex items-center gap-2" >
         <h1 className='text-lg md:text-xl font-medium'>
         BurguerLovers</h1>
+        <img className="w-[40px]" src={xegg} alt="" />
       </Link>
       <Link to="/carrinho">
         {cart != '' ? (

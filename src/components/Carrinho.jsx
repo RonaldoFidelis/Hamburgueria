@@ -65,7 +65,7 @@ export function Carrinho({ cart, setCart }) {
                 {carrinho.map((item, id) => (
                   <tr className='border-b-2' key={id}>
                     <td className='flex items-center mt-3 mb-4 max-w-[300px]'>
-                      <img className='w-[80px] h-[80px] bg-black rounded-lg' src={item.img} alt="foto-pedido" />
+                      <img className='w-[50px] md:w-[90px] bg-black rounded-lg' src={item.img} alt="foto-pedido" />
                       <div className='flex flex-col px-2 overflow-hidden'>
                         <h1 className='text-base'>{item.nome}</h1>
                         <p className='text-sm'>{item.gramas}g</p>
