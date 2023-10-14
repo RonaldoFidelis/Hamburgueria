@@ -9,7 +9,7 @@ export function Logo() {
           <h2 className='text-lg font-bold '>Bem-vindo</h2>
           <h1 className="text-4xl md:text-6xl font-extrabold s">BurguerLovers</h1>
           <span className='bg-HomeFontPrimary w-[270px] md:w-[350px] h-[2px] mt-5'></span>
-          <h3 className="text-base mt-2 font-medium text-HomeFontSecondary ">Saboreie a Magia em Cada Mordida!</h3>
+          <h3 className="text-base mt-2 font-medium text-white">Saboreie a Magia em Cada Mordida!</h3>
           <a className="text-white font-medium mt-5 p-2 rounded-md bg-HomeFontSecondary border-2 border-HomeFontSecondary hover:border-white duration-500 w-[130px]" href="#cardapio">
             Ver cardápio
           </a>

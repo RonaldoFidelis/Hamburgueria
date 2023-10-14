@@ -20,6 +20,7 @@ export function Carrinho({ cart, setCart }) {
       return item;
     });
     setCarrinho(novoCarrinho);
+    setCart(novoCarrinho);
   };
 
   // Função para diminuir a quantidade de um item no carrinho
@@ -31,11 +32,8 @@ export function Carrinho({ cart, setCart }) {
       return item;
     });
     setCarrinho(novoCarrinho);
+    setCart(novoCarrinho);
   };
-
-  const total = () => {
-
-  }
 
   // Calcular o subtotal com base nas quantidades e preços dos itens no carrinho
   const subtotal = carrinho.reduce((total, item) => {
@@ -83,7 +81,7 @@ export function Carrinho({ cart, setCart }) {
                         </button>
                       </div>
                     </td>
-                    <td className='p-2'>{item.quantidade > 1 ? ((item.quantidade * item.preco).toFixed(2)):(item.preco.toFixed(2))}</td>
+                    <td className='p-2'>{item.quantidade > 1 ? ((item.quantidade * item.preco).toFixed(2)) : (item.preco.toFixed(2))}</td>
                     <td className='p-2'>
                       <button className='' onClick={() => deleteWich(item)}>
                         <i className="fa-solid fa-x"></i>

@@ -1,13 +1,11 @@
-import { useState } from "react";
-
 export function Cardapio({ produto, addToCart }) {
-  function handleClick(food){
+  function handleClick(food) {
     addToCart(food)
   }
 
   return (
     <section id="cardapio">
-      <div className="w-full min-h-screen flex flex-col items-center bg-CardapioBg py-5">
+      <div className="w-full flex flex-col items-center bg-CardapioBg py-10">
         <div className="flex items-center justify-center mb-10">
           <h1 className="text-HomeFontPrimary font-medium text-2xl">Cardápio</h1>
         </div>
@@ -19,11 +17,11 @@ export function Cardapio({ produto, addToCart }) {
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <h1 className='text-base font-medium text-HomeFontPrimary'>{food.nome}</h1>
-                <h2 className='text-xs font-normal text-HomeFontPrimary mb-1'>{food.gramas}g</h2>
-                <h3 className='text-sm font-semibold text-HomeFontSecondary'>R$ {food.preco}</h3>
+                <h2 className='text-xs font-normal text-HomeFontPrimary mb-1'>{food.gramas}</h2>
+                <h3 className='text-sm font-semibold text-HomeFontSecondary'>R$ {food.preco.toFixed(2)}</h3>
               </div>
               <button onClick={() => handleClick(food)} className='flex items-center justify-center gap-2 text-white text-[15px] bg-HomeFontSecondary px-2 py-1 rounded-md'>Adicionar
-              <i className="fa-solid fa-cart-shopping"></i></button>
+                <i className="fa-solid fa-cart-shopping"></i></button>
             </div>
           ))}
         </div>
